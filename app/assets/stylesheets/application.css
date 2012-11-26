@@ -13,5 +13,5 @@
  *= require bootstrap-responsive
  *= require animate
  *= require_self
- *= require_tree .
+ *= require default
  */

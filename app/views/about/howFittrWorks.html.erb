@@ -1,6 +1,12 @@
+<% content_for :head do %>
+  <%= stylesheet_link_tag "about/howFittrWorks", :media => "all" %>
+<% end %>
+
 <% content_for :nav do %>
   <%= render 'layouts/navbars/home' %>
 <% end %>
+
+<%= render 'nav' %>
 
 <div class="container-fluid">
   <div class="row-fluid bumpDown">

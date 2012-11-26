@@ -1,5 +1,6 @@
 <% content_for :head do %>
   <%= javascript_include_tag "home/index" %>
+  <%= stylesheet_link_tag "home/index", :media => "all" %>
 <% end %>
 
 <% content_for :nav do %>
@@ -69,7 +70,7 @@
            
            <p><em class="grey">Swap out excercises</em> Say you hate squats. Or your knee hurts. No Problem. Just suggest to Fittr that you'd like to change an excercise out and Fittr will give you some equivalent alternatives.</p>
            
-           <a href="/about/how-fittr-works">Learn more about how Fittr works</a>
+           <%= link_to 'Learn more about how Fittr works', :controller => 'about', :action => 'howFittrWorks' %>
            
          </div>
        </div>

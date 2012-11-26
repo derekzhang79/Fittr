@@ -1,7 +1,8 @@
 Fittr::Application.routes.draw do
   root :to => 'home#index'
   
-  match '/about/how-fittr-works' => 'home#howfittrworks'
+  match '/About/HowFittrWorks' => 'about#howFittrWorks'
+  match '/About/FittrsWorkouts' => 'about#fittrsWorkouts'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

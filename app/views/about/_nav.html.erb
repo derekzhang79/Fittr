@@ -1,0 +1,20 @@
+<div class="span4">
+  <ul class="nav nav-tabs nav-stacked">
+    <% if current_page? :action => 'howFittrWorks' %>
+      <li class="active">
+    <% else %>
+      <li>
+    <% end %>
+      <%= link_to 'How Fittr Works', :action => 'howFittrWorks' %>
+    </li>
+
+
+    <% if current_page? :action => 'fittrsWorkouts' %>
+      <li class="active">
+    <% else %>
+      <li>
+    <% end %>
+      <%= link_to 'Fittr\'s Workouts', :action => 'fittrsWorkouts' %>
+    </li>
+  </ul>
+</div>
