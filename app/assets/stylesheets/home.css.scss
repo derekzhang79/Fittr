@@ -1,0 +1,312 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  color: white;
+  min-height: 800px;
+  font-family: "nimbus-sans-condensed";
+
+  background: #3399cc repeat-x top;
+  -o-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background: -webkit-gradient(
+      linear,
+      left bottom, left top,
+      from(rgba(62,173,159,1)),
+      to(#3399cc)
+  );
+  background: -webkit-linear-gradient(
+      bottom,
+      rgba(62,173,159,1),
+      #3399cc
+  );
+  background: -moz-linear-gradient(
+      bottom,
+      rgba(62,173,159,1),
+      #3399cc
+  );
+  background: -o-linear-gradient(
+      bottom,
+      rgba(62,173,159,1),
+      #3399cc
+  );
+  background: linear-gradient(
+      bottom,
+      rgba(62,173,159,1),
+      #3399cc
+  );
+}
+
+h1, h2 {
+  line-height: 1.1em;
+  font-weight: 100;
+}
+
+h1 {
+  font-size: 3.0em;
+}
+
+h3 {
+  font-size: 3.0em;
+  font-weight: 100;
+  line-height: 1.2em;
+}
+
+a {
+  color: black;
+
+  &:hover {
+    color: white;
+  }
+}
+
+em {
+  font-style: normal;
+  color: #333;
+  font-weight: 800;
+
+  &.red {
+    color: #FF3333;
+  }
+}
+
+.navbar {
+  .logo {
+    width: 111px;
+    height: 60px;
+  }
+}
+
+.container-center {
+  text-align: center;
+}
+
+.container-right {
+  text-align: right;
+}
+
+
+.container-roomier {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.container-padded {
+  padding: 20px;
+}
+
+.container-space-bottom {
+  padding-bottom: 40px;
+}
+
+.container-white {
+  background: #FBFBFB;
+  height: 800px;
+}
+
+//bokeh containers//
+.container-bokeh-home {
+  min-height: 387px;
+  max-height: 702px;
+  background-image: asset-url("billboard.jpg", image);
+  border-radius: 4px;
+}
+
+.container-bokeh-hfw {
+  height: 306px;
+  background-image: asset-url("about/hfw.jpg", image);
+  border-radius: 4px;
+}
+//end bokeh//
+
+.container-gray {
+  background: #333;
+  
+  a {
+    color: skyblue;
+  }
+}
+
+.container-gray-alt {
+  background: #444;
+  
+  a {
+    color: skyblue;
+  }
+}
+
+.content {
+  margin-top: 68px;
+}
+
+.hero-unit
+{
+  position: relative;
+  width: 100%;
+  background: #FBFBFB;
+  border: 1px solid #eee;
+  -moz-border-radius: 4px;
+  border-radius: 2px;
+  padding: 2em 1.5em;
+  color: rgba(0,0,0, .8);
+  line-height: 1.5;
+  position:relative;
+  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+
+  h1 {
+    font-size: 2.4em;
+  }
+  
+  em {
+    color: skyblue;
+
+    &.red {
+      color: #FF3333;
+    }
+
+    &.purple {
+      color: purple;
+    }
+    
+    &.grey {
+      color: grey;
+    }
+  }
+
+  &:before, &:after {
+    content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:10px;
+    bottom:10px;
+    left:0;
+    right:0;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+  }
+
+  &:after {
+    right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+    -moz-transform:skew(8deg) rotate(3deg);
+    -ms-transform:skew(8deg) rotate(3deg);
+    -o-transform:skew(8deg) rotate(3deg);
+    transform:skew(8deg) rotate(3deg);
+  }
+}
+
+.btn-huge {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 1.5em;
+}
+
+.bumpDown {
+  margin-top: 7px;
+}
+
+.cubanoHead {
+  font-family: "cubano";
+  font-size: 37px;
+  text-shadow: 1px 1px 2px black;
+}
+
+// colors //
+.purpleT {
+  color: #7c49ff;
+}
+
+.whiteT {
+  color: white;
+}
+
+.greyT {
+  color: grey;
+}
+
+
+.orangeT {
+  color: orange;
+}
+
+.redT {
+  color: red;
+}
+
+.greenT {
+  color: green;
+}
+
+.lightBlueT {
+  color: skyblue;
+}
+
+.yellowT {
+  color: yellow;
+}
+// end colors //
+
+.pointTitle {
+  h1 {
+    font-family: 'cubano';
+    font-size: 40px;
+    margin-bottom: 5px;
+    letter-spacing: -2px;
+  }
+  
+  h2 {
+    font-size: 30px;
+    margin-bottom: 18px;
+    font-weight: 100;
+  }
+  
+  p {
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+    font-size: 15px;
+  }
+  
+  a {
+    color: #08C;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+    font-size: 14px;
+    word-spacing: -1px;
+
+    background-image: asset-url("morearrow.gif", image);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-size: auto;
+    background-attachment: scroll;
+    background-clip: border-box;
+    padding-right: 10px;
+    white-space: nowrap;
+    line-height: 22px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.getFittrButton {
+  background-image: asset-url("home/getfittrbutton.png", image);
+  height: 74px;
+  width: 475px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  &:hover {
+    background-position: 475px 0px;
+  };
+}
+  

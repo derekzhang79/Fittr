@@ -1,0 +1,176 @@
+<% content_for :head do %>
+  <%= javascript_include_tag "home/index" %>
+<% end %>
+
+<% content_for :nav do %>
+  <%= render 'layouts/navbars/home' %>
+<% end %>
+
+<!-- Hero -->
+<div class="container-fluid container-bokeh-home container-padded">
+  <div class="row-fluid bumpDown">
+    <div class="offset1 span10">
+      <div class="span7 offset1">
+        <!-- Be# -->
+        <h1 class="cubanoHead">Ready to <em class="lightBlueT">#Change</em> your life?</h1>
+        <h1 class="cubanoHead">We're ready to help you
+        <h1 class="hidden cubanoHead" id="BeFittr"><em class="lightBlueT">Get #Fittr</em></h1>
+        <h1 class="hidden" id="BeOvercome"><em class="redT">#Overcome</em></h1>
+        <h1 class="hidden" id="BeMakeTheTeam"><em class="yellowT">#MakeTheTeam</em></h1>
+        <h1 class="hidden" id="BeIncreaseConfidence"><em class="orangeT">#IncreaseConfidence</em></h1>
+        <h1 class="hidden" id="BeImpressHer"><em class="whiteT">#ImpressSomeone</em></h1>
+        <h1 class="hidden" id="BeLoseWeight"><em class="greenT">#LoseWeight</em></h1>
+        <h1 class="hidden" id="BeJumpHigher"><em class="greyT">#JumpHigher</em></h1>
+        <h1 class="hidden" id="BeRunFaster"><em class="purpleT">#RunFaster</em></h1>
+        <h1 class="" id="BeStronger"><em class="redT">#GetStronger</em></h1>
+
+
+        <!-- More Info -->
+        <h2>
+            From novice to pro,<br /> <em class="lightBlueT">Fittr</em> will help you achieve your fitness goals.
+        </h2>
+
+        <div class="container-fluid">
+          <a href="#" class="btn btn-large"><%= image_tag 'Icons/glyphicons_180_facetime_video.png' %> Learn More</a>
+        </div>
+      </div>
+      <div class="span3 offset1 hidden-phone">
+        <%= image_tag 'home/billboardPhone.png', :id => 'billboardIphone' %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bottom info of page -->
+
+<div class="container-fluid container-roomier container-center">
+ <div class="row-fluid">
+   <div class="span6 offset3">
+     <h1>Try it out, it's free</h1>
+      <a href="#"><div class="getFittrButton"></div></a>
+   </div>
+  </div>
+</div>
+
+<!-- Start of alternating gray -->
+
+<div class="container-fluid container-space-bottom">
+  <div class="row-fluid">
+    <div class="span12 hero-unit">
+      
+      <div class="span4 offset2">
+         <div class="pointTitle">
+           <h1>You're unique</h1>
+           <h2>Now your workout is too.</h2>
+           
+           <p>Use Fittr if you're losing weight with a home gym, a bodybuilder with a club membership, or even a newbie without much equipment.
+           
+           <p><em class="grey">Worry free</em> Stop worrying whether you're training correctly, Fittr shows you exactly what you need to be doing to reach your goals.</p>
+           
+           <p><em class="grey">Swap out excercises</em> Say you hate squats. Or your knee hurts. No Problem. Just suggest to Fittr that you'd like to change an excercise out and Fittr will give you some equivalent alternatives.</p>
+           
+           <a href="/about/how-fittr-works">Learn more about how Fittr works</a>
+           
+         </div>
+       </div>
+       <div class="span4">
+         <%= image_tag 'home/unique.png' %>
+       </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="container-fluid container-right container-space-bottom">
+  <div class="row-fluid">
+    <div class="span12 hero-unit">
+      
+      <div class="span4 offset2">
+         <%= image_tag 'home/iphones.png' %>
+       </div>
+       <div class="span4">
+         <div class="pointTitle">
+            <h1>More Workouts</h1>
+            <h2>Less work.</h2>
+
+            <p>Fittr manages everything for your workouts and tailors new workouts for you. Let fittr worry about your fitness plan and scheduling, you've got more important things to deal with. Just grab your smartphone and hit the start your workout.</p>
+
+            </br>
+            <a href="#">Learn more about Fittr's workouts</a>
+
+          </div>
+       </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid container-space-bottom">
+  <div class="row-fluid">
+    <div class="span12 hero-unit">
+      
+      <div class="span4 offset2">
+         <div class="pointTitle">
+           <h1>Supersets to ellipticals</h1>
+           <h2>Fittr speaks the language.</h2>
+           
+           <p>A genius engine that takes your goals, equipment, and schedule into consideration makes Fittr the hands-down, thumbs-up, most advanced fitness trainer in the world. Trained by fitness experts and backed by science. Einstien would be proud.</p>
+           
+           </br>
+           <a href="#">Learn more about Fittr's technology</a>
+           
+         </div>
+       </div>
+       <div class="span4">
+         <%= image_tag 'home/laptop.png' %>
+       </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+  
+
+<div class="container-fluid container-right container-space-bottom">
+  <div class="row-fluid">
+    <div class="span12 hero-unit">
+      
+      <div class="span4 offset2">
+         <%= image_tag 'home/socialize.png' %>
+       </div>
+       <div class="span4">
+         <div class="pointTitle">
+            <h1>Socialize</h1>
+            <h2>It's good for you.</h2>
+
+            <p>Connect with friends through groups. Share your goals. Push each other. Compete for bragging rights. Stay motivated and get results!</p>
+
+            </br>
+            <a href="#">Learn more about getting social with Fittr</a>
+
+          </div>
+       </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+  
+<div class="container-fluid container-roomier container-gray-alt">
+ <div class="row-fluid">
+   <div class="offset2 span4">
+     <h3>Get Fittr.</h3>
+      <p></p> <br />
+      <a href="#">Contact</a>
+      <a href="#">About</a>
+   </div>
+   <div class="span4">
+    </div>
+  </div>
+</div>
