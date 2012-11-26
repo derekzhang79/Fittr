@@ -15,51 +15,73 @@
 
 <%= render 'layouts/navbars/basic' %>
 
-<div class="span4">
-  <ul class="nav nav-tabs nav-stacked">
-    <% if current_page? :action => 'howFittrWorks' %>
-      <li class="active">
-    <% else %>
-      <li>
-    <% end %>
-      <%= link_to 'How Fittr Works', :action => 'howFittrWorks' %>
-    </li>
-
-
-    <% if current_page? :action => 'fittrsWorkouts' %>
-      <li class="active">
-    <% else %>
-      <li>
-    <% end %>
-      <%= link_to 'Fittr\'s Workouts', :action => 'fittrsWorkouts' %>
-    </li>
-  </ul>
-</div>
-
-<!-- Infographic -->
-<div class="span9">
-<div class="container-fluid container-bokeh-hfw">
-  <div class="row-fluid bumpDown">
-    <div class="offset1 span10">
-      <div class="hidden-phone">
-        <div class="container-center">
-          <h1 class="cubanoHead aboutBBT">The trainer of the</div>
-          <h1 class="cubanoHead hugeT container-center">New Age</div>
-        </div>
-      </div>
-      <div class="visible-phone">
-        <div class="container-center">
-          <h1 class="cubanoHead">The trainer of the New Age</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
 <!-- Start of content -->
 <div class="content">
-  <%= yield %>
+  <div class="container-fluid container-padded">
+    <div class="row-fluid">
+      <div class="offset1 span2">
+        <ul class="nav nav-tabs nav-stacked">
+          <% if current_page? :action => 'howFittrWorks' %>
+            <li class="active">
+          <% else %>
+            <li>
+          <% end %>
+            <%= link_to 'How Fittr Works', :action => 'howFittrWorks' %>
+          </li>
+
+          <% if current_page? :action => 'fittrsWorkouts' %>
+            <li class="active">
+          <% else %>
+            <li>
+          <% end %>
+            <%= link_to 'Fittr\'s Workouts', :action => 'fittrsWorkouts' %>
+          </li>
+          
+          <% if current_page? :action => 'socialize' %>
+            <li class="active">
+          <% else %>
+            <li>
+          <% end %>
+            <%= link_to 'Socialize', :action => 'socialize' %>
+          </li>
+          
+          <% if current_page? :action => 'FAQ' %>
+            <li class="active">
+          <% else %>
+            <li>
+          <% end %>
+            <%= link_to 'FAQ', :action => 'FAQ' %>
+          </li>
+          
+          <% if current_page? :action => 'TermsOfUse' %>
+            <li class="active">
+          <% else %>
+            <li>
+          <% end %>
+            <%= link_to 'Terms Of Use', :action => 'TermsOfUse' %>
+          </li>
+          
+          <% if current_page? :action => 'ContactUs' %>
+            <li class="active">
+          <% else %>
+            <li>
+          <% end %>
+            <%= link_to 'Contact Us', :action => 'ContactUs' %>
+          </li>
+          
+        </ul>
+      </div>
+
+      <!-- Infographic -->
+        <%= yield %>
+    
+    </div>
+  </div>
+  
+  
+  
+  
+  
 </div>
 
 </body>

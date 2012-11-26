@@ -3,6 +3,10 @@ Fittr::Application.routes.draw do
   
   match '/About/HowFittrWorks' => 'about#howFittrWorks'
   match '/About/FittrsWorkouts' => 'about#fittrsWorkouts'
+  match '/About/Socialize' => 'about#socialize'
+  match '/About/FAQ' => 'about#FAQ'
+  match '/About/TermsOfUse' => 'about#TermsOfUse'
+  match '/About/ContactUs' => 'about#ContactUs'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -4,4 +4,19 @@ class AboutController < ApplicationController
 
   def fittrsWorkouts
   end
+  
+  def termsOfUse
+  end
+  
+  def socialize
+  end
+  
+  def ContactUs
+  end
+  
+  def FAQ
+  end
+  
+  def FAQ
+  end
 end
