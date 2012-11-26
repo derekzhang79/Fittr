@@ -3,6 +3,9 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+
   color: white;
   min-height: 800px;
   font-family: "nimbus-sans-condensed";
@@ -80,14 +83,17 @@ em {
   }
 }
 
-.container-center {
+.align-center {
   text-align: center;
 }
 
-.container-right {
+.align-right {
   text-align: right;
 }
 
+.align-justify {
+  text-align: justify;
+}
 
 .container-roomier {
   padding-top: 40px;
@@ -205,6 +211,11 @@ em {
   }
 }
 
+//Buttons
+.btn {
+  border-radius: 60px;
+}
+
 .btn-huge {
   padding-left: 25px;
   padding-right: 25px;
@@ -212,6 +223,44 @@ em {
   padding-bottom: 20px;
   font-size: 1.5em;
 }
+
+.btn-large {
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.btn-ad {
+  background-color: #6BC452;
+  background-image: none;
+  border-radius: 5px;
+  font-size: 3.6em;
+  font-family: "cubano";
+  color: white;
+  text-shadow: 1px 1px #333;
+  padding-top: 18px;
+  padding-bottom: 21px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  box-shadow:
+    0 8px 6px -6px #333,  //Shadow on the bottom
+    inset 0 -1px 1px rgba(0,0,0,0.5),  //Highlights?
+    inset 0 1px 1px rgba(255, 255, 255, 0.8);  //Highlights?
+
+  &:hover {
+    box-shadow:
+    0 8px 6px -6px green,  //Shadow on the bottom
+    inset 0 -1px 1px rgba(0,0,0,0.5),  //Highlights?
+    inset 0 1px 1px rgba(255, 255, 255, 0.8);  //Highlights?
+
+    text-shadow: -1px 0px #333;
+    background-color: #6BC452;
+    color: white;
+  }
+}
+//End Buttons
 
 .bumpDown {
   margin-top: 7px;
@@ -258,7 +307,7 @@ em {
 }
 // end colors //
 
-.pointTitle {
+.appleDesc {
   h1 {
     font-family: 'cubano';
     font-size: 40px;
