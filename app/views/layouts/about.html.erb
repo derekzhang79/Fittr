@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fittr</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <script type="text/javascript" src="//use.typekit.net/ufd3hdx.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width", initial-scale="1.0">
+
+  <%= yield :head %>
+</head>
+<body>
+
+<%= render 'layouts/navbars/basic' %>
+
+<div class="span4">
+  <ul class="nav nav-tabs nav-stacked">
+    <% if current_page? :action => 'howFittrWorks' %>
+      <li class="active">
+    <% else %>
+      <li>
+    <% end %>
+      <%= link_to 'How Fittr Works', :action => 'howFittrWorks' %>
+    </li>
+
+
+    <% if current_page? :action => 'fittrsWorkouts' %>
+      <li class="active">
+    <% else %>
+      <li>
+    <% end %>
+      <%= link_to 'Fittr\'s Workouts', :action => 'fittrsWorkouts' %>
+    </li>
+  </ul>
+</div>
+
+<!-- Infographic -->
+<div class="span9">
+<div class="container-fluid container-bokeh-hfw">
+  <div class="row-fluid bumpDown">
+    <div class="offset1 span10">
+      <div class="hidden-phone">
+        <div class="container-center">
+          <h1 class="cubanoHead aboutBBT">The trainer of the</div>
+          <h1 class="cubanoHead hugeT container-center">New Age</div>
+        </div>
+      </div>
+      <div class="visible-phone">
+        <div class="container-center">
+          <h1 class="cubanoHead">The trainer of the New Age</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Start of content -->
+<div class="content">
+  <%= yield %>
+</div>
+
+</body>
+</html>
