@@ -7,6 +7,9 @@ class AboutController < ApplicationController
   
   def termsOfUse
   end
+
+  def fittrTechnology
+  end
   
   def socialize
   end

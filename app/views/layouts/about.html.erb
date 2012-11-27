@@ -37,7 +37,15 @@
           <% end %>
             <%= link_to 'Fittr\'s Workouts', :action => 'fittrsWorkouts' %>
           </li>
-          
+
+          <% if current_page? :action => 'fittrsTechnology' %>
+            <li class="active">
+          <% else %>
+            <li>
+          <% end %>
+            <%= link_to 'FittrsTechnology', :action => 'fittrsTechnology' %>
+          </li>
+
           <% if current_page? :action => 'socialize' %>
             <li class="active">
           <% else %>
@@ -45,7 +53,7 @@
           <% end %>
             <%= link_to 'Socialize', :action => 'socialize' %>
           </li>
-          
+
           <% if current_page? :action => 'FAQ' %>
             <li class="active">
           <% else %>
@@ -53,7 +61,7 @@
           <% end %>
             <%= link_to 'FAQ', :action => 'FAQ' %>
           </li>
-          
+
           <% if current_page? :action => 'TermsOfUse' %>
             <li class="active">
           <% else %>
@@ -61,7 +69,7 @@
           <% end %>
             <%= link_to 'Terms Of Use', :action => 'TermsOfUse' %>
           </li>
-          
+
           <% if current_page? :action => 'ContactUs' %>
             <li class="active">
           <% else %>
@@ -69,7 +77,6 @@
           <% end %>
             <%= link_to 'Contact Us', :action => 'ContactUs' %>
           </li>
-          
         </ul>
       </div>
 
@@ -99,6 +106,14 @@
           <li>
         <% end %>
           <%= link_to 'Fittr\'s Workouts', :action => 'fittrsWorkouts' %>
+        </li>
+        
+        <% if current_page? :action => 'fittrsTechnology' %>
+          <li class="active">
+        <% else %>
+          <li>
+        <% end %>
+          <%= link_to 'FittrsTechnology', :action => 'fittrsTechnology' %>
         </li>
         
         <% if current_page? :action => 'socialize' %>
