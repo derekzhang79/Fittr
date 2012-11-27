@@ -16,7 +16,7 @@
         </li>
 
 	    <!-- About -->
-	    <% if current_page? :controller => 'about', :action => 'howFittrWorks' %>
+	    <% if current_page? :controller => 'about', :action => 'howFittrWorks' or current_page? :controller => 'about', :action => 'fittrsWorkouts' %>
         <li class="active">
 	    <% else %>
 	    <li>
