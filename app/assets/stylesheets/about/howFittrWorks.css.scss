@@ -9,7 +9,7 @@ body {
 .sideNav-hero {
   position: fixed;
   width: auto;
-  top: 100px;
+  top: 89px;
   width: 100%;
   background: #FBFBFB;
   border: 1px solid #eee;
@@ -66,6 +66,12 @@ body {
     -o-transform:skew(8deg) rotate(3deg);
     transform:skew(8deg) rotate(3deg);
   }
+}
+
+.innerGlowed {
+  -webkit-box-shadow:0 0 50px rgba(0, 0, 0, 0.6) inset;
+  -moz-box-shadow:0 0 50px rgba(0, 0, 0, 0.6) inset;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.6) inset;
 }
 
 .container-bokeh-workouts {
