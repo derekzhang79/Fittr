@@ -3479,7 +3479,8 @@ input[type="submit"].btn.btn-mini {
 }
 .navbar .nav > li > a {
   float: none;
-  padding: 24px 15px 24px;
+  padding: 20px 15px 24px;
+  height: 23px;
   color: #1c555e;
   font-family: Tahoma, Geneva, sans-serif;
   font-size: 20px;

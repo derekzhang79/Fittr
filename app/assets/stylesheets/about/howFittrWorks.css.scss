@@ -94,3 +94,28 @@ body {
   background-image: asset-url("about/tech.jpg", image);
   border-radius: 4px;
 }
+
+.hugeTT {
+  font-size: 100px;
+  text-align: center;
+  margin-top: -20px;
+  line-height: 100px;
+}
+
+.hugeTTT {
+  font-size: 75px;
+  text-align: center;
+  margin-top: -20px;
+  line-height: 70px;
+}
+
+.aboutBBTT {
+  font-size: 37px;
+  text-align: center;
+}
+
+.cubanoAboutHead {
+  font-family: "cubano";
+  font-size: 32px;
+  text-shadow: 1px 1px 2px black;
+}
