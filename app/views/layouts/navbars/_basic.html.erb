@@ -5,16 +5,32 @@
         <img class="pull-left logo" src="http://fittr.com/assets/logo.png">
       </a>
       <ul class="nav">
+	
+	    <!-- Home -->
+	    <% if current_page? :controller => 'home', :action => 'index' %>
         <li class="active">
-          <a href="#">Home</a>
+	    <% else %>
+	    <li>
+		<% end %>
+		  <%= link_to 'Home', :controller => 'home', :action => 'index' %>
         </li>
-        <li>
-          <a href="#">About</a>
+
+	    <!-- About -->
+	    <% if current_page? :controller => 'about', :action => 'howFittrWorks' %>
+        <li class="active">
+	    <% else %>
+	    <li>
+		<% end %>
+		  <%= link_to 'About', :controller => 'about', :action => 'howFittrWorks' %>
         </li>
+
+		<!-- Blog -->
         <li>
-          <a href="#">Blog</a>
+          <a href="http://blog.fittr.com">Blog</a>
         </li>
       </ul>
+
+	  <!-- Login and register -->
       <ul class="nav pull-right">
         <li>
         <a href="#loginModal" data-toggle="modal"><i class="icon-user bumpDown"></i> Login</a>
