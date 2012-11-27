@@ -2932,6 +2932,11 @@ input[type="submit"].btn.btn-mini {
   -moz-border-radius: 0 0 6px 6px;
   border-radius: 0 0 6px 6px;
 }
+
+.touchTop {
+  margin-bottom: 0px !important;
+}
+
 .nav {
   margin-left: 0;
   margin-bottom: 20px;
@@ -3040,10 +3045,12 @@ input[type="submit"].btn.btn-mini {
 }
 .nav-tabs > .active > a,
 .nav-tabs > .active > a:hover {
-  color: #555555;
-  background-color: #ffffff;
-  border: 1px solid #ddd;
-  border-bottom-color: transparent;
+  color: white;
+  border-color: white;
+  background-color: #0088cc;
+  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.4), 0 0 40px rgba(0, 0, 0, 0.2) inset;
+  -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.4), 0 0 40px rgba(0, 0, 0, 0.2) inset;
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.4), 0 0 40px rgba(0, 0, 0, 0.2) inset;
   cursor: default;
 }
 .nav-pills > li > a {
@@ -3092,7 +3099,12 @@ input[type="submit"].btn.btn-mini {
   border-bottom-left-radius: 4px;
 }
 .nav-tabs.nav-stacked > li > a:hover {
-  border-color: #ddd;
+  border-color: white;
+  border-radius: 3px;
+  background-color: #0088cc;
+  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.4), 0 0 40px rgba(0, 0, 0, 0.2) inset;
+  -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.4), 0 0 40px rgba(0, 0, 0, 0.2) inset;
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.4), 0 0 40px rgba(0, 0, 0, 0.2) inset;
   z-index: 2;
 }
 .nav-pills.nav-stacked > li > a {
