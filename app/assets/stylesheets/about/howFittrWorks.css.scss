@@ -119,3 +119,50 @@ body {
   font-size: 32px;
   text-shadow: 1px 1px 2px black;
 }
+
+.container-picBg {
+  background-color: #ebebeb;
+  padding: 5px;
+}
+
+// FAQ //
+.circleNumbers {
+  border-radius: 40px;
+  font-family: "cubano";
+  color: #FFF;
+  height: 36px;
+  width: 36px;
+  font-size: 24px;
+  text-align: center;
+  padding: 7px;
+  display: inline-block;
+  background-color: #0084c6;
+  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.4), 0 0 40px rgba(0, 0, 0, 0.2) inset;
+    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.4), 0 0 40px rgba(0, 0, 0, 0.2) inset;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.4), 0 0 40px rgba(0, 0, 0, 0.2) inset;
+}
+
+.buttonQue {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+  padding-top: 12px;
+  padding-left: 8px;
+  padding-right: 5px;
+  padding-bottom: 2px;
+  border-radius: 5px;
+  
+  p {
+    font-size: 17px;
+  }
+  
+  &:hover {
+    color: #2d2d2d;
+    background-color: #e5e5e5;
+    cursor: pointer;
+    
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.4), 0 0 40px rgba(0, 0, 0, 0.05) inset;
+      -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.4), 0 0 40px rgba(0, 0, 0, 0.05) inset;
+      box-shadow:0 1px 4px rgba(0, 0, 0, 0.4), 0 0 40px rgba(0, 0, 0, 0.05) inset;
+  };
+}

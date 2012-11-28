@@ -18,27 +18,27 @@ body {
   background: -webkit-gradient(
       linear,
       left bottom, left top,
-      from(rgba(62,173,159,1)),
+      from(#1ca87d),
       to(#3399cc)
   );
   background: -webkit-linear-gradient(
       bottom,
-      rgba(62,173,159,1),
+      #1ca87d,
       #3399cc
   );
   background: -moz-linear-gradient(
       bottom,
-      rgba(62,173,159,1),
+      #1ca87d,
       #3399cc
   );
   background: -o-linear-gradient(
       bottom,
-      rgba(62,173,159,1),
+      #1ca87d,
       #3399cc
   );
   background: linear-gradient(
       bottom,
-      rgba(62,173,159,1),
+      #1ca87d,
       #3399cc
   );
 }
@@ -287,6 +287,10 @@ em {
 
 .bumpDown {
   margin-top: 7px;
+}
+
+.bumprDown {
+  margin-top: 15%;
 }
 
 .cubanoHead {
