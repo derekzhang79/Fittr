@@ -53,6 +53,14 @@
           <% end %>
             <%= link_to 'Socialize', :action => 'socialize' %>
           </li>
+          
+          <% if current_page? :action => 'trainerComparison' %>
+            <li class="active">
+          <% else %>
+            <li>
+          <% end %>
+            <%= link_to 'Trainer Comparison', :action => 'trainerComparison' %>
+          </li>
 
           <% if current_page? :action => 'FAQ' %>
             <li class="active">

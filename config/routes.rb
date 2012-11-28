@@ -5,6 +5,7 @@ Fittr::Application.routes.draw do
   match '/About/FittrsWorkouts' => 'about#fittrsWorkouts'
   match '/About/FittrsTechnology' => 'about#fittrsTechnology'
   match '/About/Socialize' => 'about#socialize'
+  match '/About/TrainerComparison' => 'about#trainerComparison'
   match '/About/FAQ' => 'about#FAQ'
   match '/About/TermsOfUse' => 'about#TermsOfUse'
   match '/About/PrivacyPolicy' => 'about#PrivacyPolicy'
