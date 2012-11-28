@@ -19,3 +19,5 @@
 *.sw*
 *.tm*
 *.log
+tmp/
+*.log
