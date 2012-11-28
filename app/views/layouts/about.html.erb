@@ -181,49 +181,6 @@
   
   </div>
 </div>
-
-<div class="container-fluid container-padded container-green">
-  <div class="row-fluid">
-    <div class="offset2 span2">
-      <h3>About.</h3>
-        <p><%= link_to_unless_current 'How Fittr Works ', :controller => 'about', :action => 'howFittrWorks' %></p>
-        <p><%= link_to_unless_current 'Fittr\'s Workouts ', :controller => 'about', :action => 'fittrsWorkouts' %></p>
-        <p><%= link_to_unless_current 'Fittr\'s Technology ', :controller => 'about', :action => 'fittrsTechnology' %></p>
-        <p><%= link_to_unless_current 'Socialize ', :controller => 'about', :action => 'socialize' %></p>
-        <p><%= link_to_unless_current 'Trainer Comparison ', :controller => 'about', :action => 'trainerComparison' %></p>
-    </div>
-    <div class="span3">
-      <h3>Fittr Links.</h3>
-        <p><%= link_to_unless_current 'FAQ ', :controller => 'about', :action => 'FAQ' %></p>
-        <p><%= link_to_unless_current 'Contact', :controller => 'about', :action => 'ContactUs' %></p>
-        <p><%= link_to_unless_current 'Terms Of Use ', :controller => 'about', :action => 'TermsOfUse' %></p>
-        <p><%= link_to_unless_current 'Privacy Policy', :controller => 'about', :action => 'PrivacyPolicy' %></p>
-   </div>
-   <div class="span5">
-    <h3>Social Links.</h3>
-    <div class="row-fluid">
-      
-      <!-- SU -->
-      <div class="span2">
-      <su:badge layout="5"></su:badge>
-      </div>
-      
-      <!-- fb -->
-      <div class="span2">
-        <div class="fb-like" data-href="http://www.facebook.com/fittrbody?fref=ts" data-send="false" data-layout="box_count" data-width="450" data-show-faces="true"></div>
-      </div>
-      
-      <!-- pinterest -->
-      <div class="bumpDown span2">
-        <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Ffittr.com%2F&media=http%3A%2F%2Ffittr.com%2Fassets%2Fpinterest.gif&description=Get%20great%20workouts%20that%20are%20completely%20tailored%20to%20you.%20With%20millions%20of%20workout%20combinations%2C%20no%20matter%20what%20equipment%20you%20have%2C%20no%20matter%20how%20intense%20you%20want%20to%20work%2C%20Fittr%20will%20change%20the%20way%20you%20look%20at%20fitness" class="pin-it-button" count-layout="vertical"><img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" /></a>
-      </div>
-      
-    </div>
-    
-   </div>
-  </div>
-</div>
-<script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
-
+  <%= render 'layouts/footer' %>
 </body>
 </html>
