@@ -110,6 +110,14 @@ em {
   padding-bottom: 40px;
 }
 
+.container-green {
+  background: #096D4F;
+  
+  a {
+    color: #04a5ca;
+  }
+}
+
 .container-white {
   background: #FBFBFB;
   height: 800px;
@@ -406,5 +414,9 @@ em {
 
 .centerIt {
   text-align: center;
+}
+
+.bumpUp{
+  margin-top: 0px
 }
   
