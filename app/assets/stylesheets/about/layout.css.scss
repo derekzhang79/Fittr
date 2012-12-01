@@ -1,0 +1,174 @@
+body {
+  background-color: gray;
+}
+
+.rightT {
+  text-align: right;
+}
+
+.sideNav-hero {
+  position: fixed;
+  width: auto;
+  top: 89px;
+  width: 100%;
+  background: #FBFBFB;
+  border: 1px solid #eee;
+  -moz-border-radius: 4px;
+  border-radius: 2px;
+  padding: 5px;
+  color: rgba(0,0,0, .8);
+  line-height: 1.5;
+  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+
+  h1 {
+    font-size: 2.4em;
+  }
+  
+  em {
+    color: skyblue;
+
+    &.red {
+      color: #FF3333;
+    }
+
+    &.purple {
+      color: purple;
+    }
+    
+    &.grey {
+      color: grey;
+    }
+  }
+
+  &:before, &:after {
+    content:"";
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    position: static;
+    width: auto;
+    top: 0;
+    left:0;
+    right:0;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+  }
+
+  &:after {
+    right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+    -moz-transform:skew(8deg) rotate(3deg);
+    -ms-transform:skew(8deg) rotate(3deg);
+    -o-transform:skew(8deg) rotate(3deg);
+    transform:skew(8deg) rotate(3deg);
+  }
+}
+
+.innerGlowed {
+  -webkit-box-shadow:0 0 50px rgba(0, 0, 0, 0.6) inset;
+  -moz-box-shadow:0 0 50px rgba(0, 0, 0, 0.6) inset;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.6) inset;
+}
+
+.container-bokeh-workouts {
+  max-height: 306px;
+  background-repeat: no-repeat;
+  background-image: asset-url("about/workout.jpg", image);
+  border-radius: 4px;
+}
+
+.container-bokeh-social {
+  max-height: 306px;
+  background-repeat: no-repeat;
+  background-image: asset-url("about/social.jpg", image);
+  border-radius: 4px;
+}
+
+.container-bokeh-tech {
+  max-height: 306px;
+  background-repeat: no-repeat;
+  background-image: asset-url("about/tech.jpg", image);
+  border-radius: 4px;
+}
+
+.container-bokeh-home-about {
+  max-height: 306px;
+  background-image: asset-url("billboard.jpg", image);
+  border-radius: 4px;
+}
+
+.hugeTT {
+  font-size: 100px;
+  text-align: center;
+  margin-top: -20px;
+  line-height: 100px;
+}
+
+.hugeTTT {
+  font-size: 75px;
+  text-align: center;
+  margin-top: -20px;
+  line-height: 70px;
+}
+
+.aboutBBTT {
+  font-size: 37px;
+  text-align: center;
+}
+
+.cubanoAboutHead {
+  font-family: "cubano";
+  font-size: 32px;
+  text-shadow: 1px 1px 2px black;
+}
+
+.container-picBg {
+  background-color: #ebebeb;
+  padding: 52px;
+}
+
+// FAQ //
+.circleNumbers {
+  border-radius: 40px;
+  font-family: "cubano";
+  color: #FFF;
+  height: 36px;
+  width: 36px;
+  font-size: 24px;
+  text-align: center;
+  padding: 7px;
+  display: inline-block;
+  background-color: #0084c6;
+  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.4), 0 0 40px rgba(0, 0, 0, 0.2) inset;
+    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.4), 0 0 40px rgba(0, 0, 0, 0.2) inset;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.4), 0 0 40px rgba(0, 0, 0, 0.2) inset;
+}
+
+.buttonQue {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+  padding-top: 12px;
+  padding-left: 8px;
+  padding-right: 5px;
+  padding-bottom: 2px;
+  border-radius: 5px;
+  
+  p {
+    font-size: 17px;
+  }
+  
+  &:hover {
+    color: #2d2d2d;
+    background-color: #e5e5e5;
+    cursor: pointer;
+    
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.4), 0 0 40px rgba(0, 0, 0, 0.05) inset;
+      -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.4), 0 0 40px rgba(0, 0, 0, 0.05) inset;
+      box-shadow:0 1px 4px rgba(0, 0, 0, 0.4), 0 0 40px rgba(0, 0, 0, 0.05) inset;
+  };
+}
