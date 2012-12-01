@@ -16,7 +16,14 @@
         </li>
 
 	    <!-- About -->
-	    <% if current_page? :controller => 'about', :action => 'howFittrWorks' or current_page? :controller => 'about', :action => 'fittrsWorkouts' %>
+	    <% if current_page? :controller => 'about', :action => 'howFittrWorks' \
+		     or current_page? :controller => 'about', :action => 'fittrsWorkouts' \
+		     or current_page? :controller => 'about', :action => 'TermsOfUse' \
+		     or current_page? :controller => 'about', :action => 'fittrsTechnology' \
+		     or current_page? :controller => 'about', :action => 'socialize' \
+		     or current_page? :controller => 'about', :action => 'ContactUs' \
+				 or current_page? :controller => 'about', :action => 'PrivacyPolicy' \
+		     or current_page? :controller => 'about', :action => 'FAQ' %> 
         <li class="active">
 	    <% else %>
 	    <li>
