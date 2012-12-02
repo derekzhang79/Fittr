@@ -78,11 +78,13 @@ em {
 }
 
 .navbar {
-  a {
-  }
-  .logo {
-    width: 111px;
-    height: 60px;
+	/* Keep loading from skewing */
+	.logo {
+		width: 111px;
+	}
+	
+	.navbar-inner {
+		border-radius: 0px;
   }
 }
 
@@ -124,24 +126,6 @@ em {
   height: 800px;
 }
 
-//bokeh containers//
-.container-bokeh-home {
-  min-height: 387px;
-  max-height: 702px;
-  background-image: asset-url("billboard.jpg", image);
-  border-radius: 4px;
-  
-}
-
-.container-bokeh-hfw {
-  max-height: 306px;
-  background-repeat: no-repeat;
-  background-image: asset-url("about/hfw.jpg", image);
-  border-radius: 4px;
-  
-}
-//end bokeh//
-
 .container-gray {
   background: #333;
   
@@ -159,7 +143,7 @@ em {
 }
 
 .content {
-  margin-top: 68px;
+  margin-top: -30px;
 }
 
 .hero-unit

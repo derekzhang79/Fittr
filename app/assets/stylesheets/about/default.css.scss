@@ -175,3 +175,11 @@ body {
       box-shadow:0 1px 4px rgba(0, 0, 0, 0.4), 0 0 40px rgba(0, 0, 0, 0.05) inset;
   };
 }
+
+.container-bokeh-hfw {
+  max-height: 306px;
+  background-repeat: no-repeat;
+  background-image: asset-url("about/hfw.jpg", image);
+  border-radius: 4px;
+  
+}
