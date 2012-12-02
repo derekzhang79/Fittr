@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
+	min-width: 1200px;
   font-smooth: always;
   -webkit-font-smoothing: antialiased;
 
@@ -243,53 +244,9 @@ em {
   padding-bottom: 15px;
 }
 
-.btn-ad {
-  background-image: -moz-linear-gradient(top, #66c051, #58a546);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#66c051), to(#58a546));
-  background-image: -webkit-linear-gradient(top, #66c051, #58a546);
-  background-image: -o-linear-gradient(top, #66c051, #58a546);
-  background-image: linear-gradient(to bottom, #66c051, #58a546);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#66c051', endColorstr='#58a546', GradientType=0);
-  border-color: #4a8a3b;
-  border-style: solid;
-  border: 1px;
-  
-  border-radius: 5px;
-  font-size: 3.6em;
-  font-family: "cubano";
-  color: white;
-  text-shadow: 1px 1px #333;
-  padding-top: 18px;
-  padding-bottom: 21px;
-  padding-left: 20px;
-  padding-right: 20px;
-
-  box-shadow:
-    0 8px 6px -6px #333,  //Shadow on the bottom
-    inset -1px -1px 1px rgba(0,0,0,0.5),  //Highlights?
-    inset 0 1px 1px rgba(255, 255, 255, 0.8);  //Highlights?
-
-  &:hover {
-    
-    background-image: -moz-linear-gradient(top, #58a546, #66c051);
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#58a546), to(#66c051));
-    background-image: -webkit-linear-gradient(top, #58a546, #66c051);
-    background-image: -o-linear-gradient(top, #58a546, #66c051);
-    background-image: linear-gradient(to bottom, #58a546, #66c051);
-    background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#58a546', endColorstr='#66c051', GradientType=0);
-    
-    box-shadow:
-    0 8px 6px -6px green,  //Shadow on the bottom
-    inset 1px 1px 1px rgba(0,0,0,0.2),  //Highlights?
-    inset 0 -1px 1px rgba(255, 255, 255, 0.2),  //Highlights?
-    inset 2px 1px 20px rgba(0,0,0,0.35);
-
-    text-shadow: -1px 0px #333;
-    background-color: #6BC452;
-    color: white;
-  }
+.btn-try {
+	width: 400px;
+	background-color: gray;
 }
 
 .btn-fb {
@@ -297,16 +254,20 @@ em {
 }
 //End Buttons
 
+.under20 {
+	margin-bottom: 20px !important;
+}
+
 .bumpDown {
-  margin-top: 7px;
+  margin-top: 7px !important;
 }
 
 .bumpDowned {
-  margin-top: 30px;
+  margin-top: 20px !important;
 }
 
 .bumprDown {
-  margin-top: 15%;
+  margin-top: 15% !important;
 }
 
 .cubanoHead {
