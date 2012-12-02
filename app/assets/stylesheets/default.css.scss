@@ -377,25 +377,19 @@ em {
 
 @media (min-width: 768px) and (max-width: 979px) {
   .jumbosign {
-    width: 80%;
+    width: 90%;
   }
 }
 
 @media (max-width: 767px) {
   .jumbosign {
-    width: 80%;
+    width: 90%;
   }
 }
 
 @media (max-width: 480px) {
   .jumbosign {
-    width: 80%;
-  }
-}
-  
-@media (min-width: 1200px) {
-  .jumbosign {
-    width: 95%;
+    width: 90%;
   }
 }
 
@@ -414,6 +408,12 @@ em {
 
 @media (min-width: 980px) {
   .jumbosign {
-    width: 80%;
+    width: 90%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .jumbosign {
+    width: 92%;
   }
 }
