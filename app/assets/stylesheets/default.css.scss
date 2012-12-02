@@ -145,11 +145,9 @@ em {
   margin-top: 63px;
 }
 
-@media (min-width: 1200px) {
 .jumbosign
 {
   position: relative;
-  width: 95%;
   margin-left: auto;
   margin-right: auto;
   background: #FBFBFB;
@@ -208,73 +206,6 @@ em {
     -o-transform:skew(8deg) rotate(3deg);
     transform:skew(8deg) rotate(3deg);
   }
-}
-}
-
-@media (max-width: 1200px) {
-	.jumbosign
-	{
-	  position: relative;
-	  width: 93%;
-	  margin-left: auto;
-	  margin-right: auto;
-	  background: #FBFBFB;
-	  border: 1px solid #eee;
-	  -moz-border-radius: 4px;
-	  border-radius: 2px;
-	  padding: 2em 1.5em;
-	  color: rgba(0,0,0, .8);
-	  line-height: 1.5;
-	  position:relative;
-	  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-	  -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-	  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-
-	  h1 {
-	    font-size: 2.4em;
-	  }
-
-	  em {
-	    color: skyblue;
-
-	    &.red {
-	      color: #FF3333;
-	    }
-
-	    &.purple {
-	      color: purple;
-	    }
-
-	    &.grey {
-	      color: grey;
-	    }
-	  }
-
-	  &:before, &:after {
-	    content:"";
-	    position:absolute;
-	    z-index:-1;
-	    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
-	    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
-	    box-shadow:0 0 20px rgba(0,0,0,0.8);
-	    top:10px;
-	    bottom:10px;
-	    left:0;
-	    right:0;
-	    -moz-border-radius:100px / 10px;
-	    border-radius:100px / 10px;
-	  }
-
-	  &:after {
-	    right:10px;
-	    left:auto;
-	    -webkit-transform:skew(8deg) rotate(3deg);
-	    -moz-transform:skew(8deg) rotate(3deg);
-	    -ms-transform:skew(8deg) rotate(3deg);
-	    -o-transform:skew(8deg) rotate(3deg);
-	    transform:skew(8deg) rotate(3deg);
-	  }
-	}
 }
 
 //Buttons
@@ -441,4 +372,28 @@ em {
   
 .modal {
 	color: black;
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+}
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 480px) {
+  .jumbosign {
+    width: 80%;
+  }
+}
+  
+@media (min-width: 1200px) {
+  .jumbosign {
+    width: 95%;
+  }
+}
+
+@media (max-width: 979px) {
+}
+
+@media (min-width: 980px) {
 }
