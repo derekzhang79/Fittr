@@ -156,6 +156,7 @@ em {
   border-radius: 2px;
   padding: 2em 1.5em;
   color: rgba(0,0,0, .8);
+  margin-bottom: 25px;
   line-height: 1.5;
   position:relative;
   -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -375,9 +376,15 @@ em {
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
+  .jumbosign {
+    width: 80%;
+  }
 }
 
 @media (max-width: 767px) {
+  .jumbosign {
+    width: 80%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -393,7 +400,13 @@ em {
 }
 
 @media (max-width: 979px) {
+  .jumbosign {
+    width: 80%;
+  }
 }
 
 @media (min-width: 980px) {
+  .jumbosign {
+    width: 80%;
+  }
 }
