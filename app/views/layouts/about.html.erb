@@ -20,7 +20,7 @@
 <div class="content visible-desktop">
   <div class="container-fluid container-padded">
     <div class="row-fluid">
-      <div class="offset1 sideNav-hero">
+      <div class="span3 offset1 sideNav-hero affix">
         <ul class="nav touchTop nav-tabs nav-stacked">
           <% if current_page? :action => 'howFittrWorks' %>
             <li class="active">
@@ -98,7 +98,7 @@
       </div>
 
       <!-- Infographic -->
-        <%= yield %>
+      <%= yield %>
     
     </div>
   </div>

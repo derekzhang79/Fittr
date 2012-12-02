@@ -7,9 +7,6 @@ body {
 }
 
 .sideNav-hero {
-	width: 300px;
-  position: fixed;
-  top: 89px;
   background: #FBFBFB;
   border: 1px solid #eee;
   -moz-border-radius: 4px;
@@ -66,9 +63,6 @@ body {
     transform:skew(8deg) rotate(3deg);
   }
 
-  .nav {
-	  width: 300px;
-  }
 }
 
 .innerGlowed {
