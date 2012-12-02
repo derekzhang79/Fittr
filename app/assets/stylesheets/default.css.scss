@@ -403,6 +403,13 @@ em {
   .jumbosign {
     width: 90%;
   }
+
+	.navbar {
+	  a {
+		  color: white !important;
+		  text-shadow: none !important;
+		}
+  }
 }
 
 @media (min-width: 980px) {
