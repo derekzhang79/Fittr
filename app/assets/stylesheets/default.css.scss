@@ -375,45 +375,118 @@ em {
 	color: black;
 }
 
-@media (min-width: 768px) and (max-width: 979px) {
+/* Large desktop */
+@media (min-width: 1200px) {  
   .jumbosign {
-    width: 90%;
+    width: 92%;
+  }
+  .getFittrButton {
+    background-image: asset-url("home/getfittrbutton.png", image);
+    height: 74px;
+    width: 475px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &:hover {
+      background-position: 475px 0px;
+      cursor: pointer;
+    };
   }
 }
 
+@media (min-width: 980px) and (max-width: 1199px) {  
+  .jumbosign {
+    width: 90%;
+  }  
+  .getFittrButton {
+    background-image: asset-url("home/getfittrbutton.png", image);
+    height: 74px;
+    width: 475px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &:hover {
+      background-position: 475px 0px;
+      cursor: pointer;
+    };
+  }
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {  
+  .jumbosign {
+    width: 90%;
+  }  
+  
+  .getFittrButton {
+    background-image: asset-url("home/getfittrbutton.png", image);
+    height: 74px;
+    width: 475px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &:hover {
+      background-position: 475px 0px;
+      cursor: pointer;
+    };
+  }
+}
+ 
+/* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
   .jumbosign {
     width: 90%;
   }
-}
-
-@media (max-width: 480px) {
-  .jumbosign {
-    width: 90%;
-  }
-}
-
-@media (max-width: 979px) {
-  .jumbosign {
-    width: 90%;
-  }
-
-	.navbar {
+  
+  .navbar {
 	  a {
 		  color: white !important;
 		  text-shadow: none !important;
 		}
   }
-}
+  .getFittrButton {
+    background-image: asset-url("home/getfittrbutton.png", image);
+    height: 74px;
+    width: 475px;
+    margin-left: auto;
+    margin-right: auto;
 
-@media (min-width: 980px) {
+    &:hover {
+      background-position: 475px 0px;
+      cursor: pointer;
+    };
+  }
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
   .jumbosign {
     width: 90%;
   }
-}
+  
+  .navbar {
+	  a {
+		  color: white !important;
+		  text-shadow: none !important;
+		}
+  }
+  
+  .getFittrButton {
+    background-image: asset-url("home/getfittrbutton.png", image);
+    height: 74px;
+    width: 475px;
+    margin-left: -80px;
+    margin-right: auto;
+    
+    transform: scale(0.7,0.7);
+    -ms-transform: scale(0.7,0.7);
+    -webkit-transform: scale(0.7,0.7);
+    -o-transform: scale(0.7,0.7);
+    -moz-transform: scale(0.7,0.7);
 
-@media (min-width: 1200px) {
-  .jumbosign {
-    width: 92%;
+    &:hover {
+      background-position: 475px 0px;
+      cursor: pointer;
+    };
   }
 }
