@@ -437,13 +437,13 @@ em {
   
   .getFittrButton {
     background-image: asset-url("home/getfittrbuttontwo.png", image);
-    height: 52px;
-    width: 332px;
+    height: 46px;
+    width: 299px;
     margin-left: auto;
     margin-right: auto;
 
     &:hover {
-      background-position: 332px 0px;
+      background-position: 299px 0px;
       cursor: pointer;
     };
   }
