@@ -419,6 +419,11 @@ em {
 		  color: white !important;
 		  text-shadow: none !important;
 		}
+		
+		/* Opening bug */
+		.nav {
+			height: 100%;
+		}
   }
 }
  
@@ -432,6 +437,11 @@ em {
 	  a {
 		  color: white !important;
 		  text-shadow: none !important;
+		}
+		
+		/* Opening bug */
+		.nav {
+			height: 100%;
 		}
   }
   
