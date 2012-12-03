@@ -17,11 +17,11 @@
 <%= render 'layouts/navbars/basic' %>
 
 <!-- Start of content desktop -->
-<div class="content visible-desktop">
-  <div class="container-fluid container-padded">
+<div class="content">
+  <div class="container-fluid">
     <div class="row-fluid">
-      <div class="span3 offset1 sideNav-hero affix">
-        <ul class="nav touchTop nav-tabs nav-stacked">
+      <div class="span3">
+        <ul class="nav sideNav-hero nav-tabs nav-stacked">
           <% if current_page? :action => 'howFittrWorks' %>
             <li class="active">
           <% else %>
@@ -98,89 +98,14 @@
       </div>
 
       <!-- Infographic -->
-      <%= yield %>
-    
+      <div class="span9">
+        <%= yield %>
+      </div>
     </div>
   </div>
 </div>
-
-<!-- Start of content under desktop -->
-<div class="container-fluid container-padded hidden-desktop">
-  <div class="row-fluid">
-    <div class="offset1 span3 sideNav-hero">
-      <ul class="nav nav-tabs nav-stacked">
-        <% if current_page? :action => 'howFittrWorks' %>
-          <li class="active">
-        <% else %>
-          <li>
-        <% end %>
-          <%= link_to 'How Fittr Works', :action => 'howFittrWorks' %>
-        </li>
-
-        <% if current_page? :action => 'fittrsWorkouts' %>
-          <li class="active">
-        <% else %>
-          <li>
-        <% end %>
-          <%= link_to 'Fittr\'s Workouts', :action => 'fittrsWorkouts' %>
-        </li>
-        
-        <% if current_page? :action => 'fittrsTechnology' %>
-          <li class="active">
-        <% else %>
-          <li>
-        <% end %>
-          <%= link_to 'Fittrs Technology', :action => 'fittrsTechnology' %>
-        </li>
-        
-        <% if current_page? :action => 'socialize' %>
-          <li class="active">
-        <% else %>
-          <li>
-        <% end %>
-          <%= link_to 'Socialize', :action => 'socialize' %>
-        </li>
-        
-        <% if current_page? :action => 'FAQ' %>
-          <li class="active">
-        <% else %>
-          <li>
-        <% end %>
-          <%= link_to 'FAQ', :action => 'FAQ' %>
-        </li>
-        
-        <% if current_page? :action => 'TermsOfUse' %>
-          <li class="active">
-        <% else %>
-          <li>
-        <% end %>
-          <%= link_to 'Terms Of Use', :action => 'TermsOfUse' %>
-        </li>
-        
-        <% if current_page? :action => 'PrivacyPolicy' %>
-          <li class="active">
-        <% else %>
-          <li>
-        <% end %>
-          <%= link_to 'Privacy Policy', :action => 'PrivacyPolicy' %>
-        </li>
-        
-        <% if current_page? :action => 'ContactUs' %>
-          <li class="active">
-        <% else %>
-          <li>
-        <% end %>
-          <%= link_to 'Contact Us', :action => 'ContactUs' %>
-        </li>
-        
-      </ul>
-    </div>
-
-    <!-- Infographic -->
-      <%= yield %>
   
-  </div>
-</div>
-  <%= render 'layouts/footer' %>
+<%= render 'layouts/footer' %>
+
 </body>
 </html>

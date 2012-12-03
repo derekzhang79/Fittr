@@ -178,6 +178,14 @@ em {
     &.purple {
       color: purple;
     }
+
+    &.green {
+	    color: green;
+    }
+    
+    &.orange {
+	    color: orange;
+		}
     
     &.grey {
       color: grey;
@@ -248,7 +256,7 @@ em {
   margin-top: 7px !important;
 }
 
-.bumpDowned {
+.bumpDowned, .bumpedDown, .bumpDown20 {
   margin-top: 20px !important;
 }
 
@@ -413,6 +421,10 @@ em {
       cursor: pointer;
     };
   }
+
+  .content {
+	  margin-top: 0px;
+	}
 }
  
 /* Landscape phone to portrait tablet */
@@ -433,6 +445,10 @@ em {
       cursor: pointer;
     };
   }
+
+	.content {
+	  margin-top: 0px;
+	}
 }
  
 /* Landscape phones and down */
@@ -453,4 +469,8 @@ em {
       cursor: pointer;
     };
   }
+
+	.content {
+	  margin-top: 0px;
+	}
 }
