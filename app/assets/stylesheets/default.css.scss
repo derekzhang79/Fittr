@@ -405,6 +405,11 @@ em {
 		  color: white !important;
 		  text-shadow: none !important;
 		}
+		
+		/* Opening bug */
+		.nav {
+			height: 100% !important;
+		}
   }
 }
  
@@ -422,7 +427,7 @@ em {
 		
 		/* Opening bug */
 		.nav {
-			height: 100%;
+			height: 100% !important;
 		}
   }
 }
@@ -441,7 +446,7 @@ em {
 		
 		/* Opening bug */
 		.nav {
-			height: 100%;
+			height: 100% !important;
 		}
   }
   
