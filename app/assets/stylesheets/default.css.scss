@@ -156,7 +156,8 @@ em {
   border-radius: 2px;
   padding: 2em 1.5em;
   color: rgba(0,0,0, .8);
-  margin-bottom: 25px;
+  margin-bottom: 15px;
+  margin-top: 15px;
   line-height: 1.5;
   position:relative;
   -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -399,19 +400,11 @@ em {
   .jumbosign {
     width: 90%;
   }  
-
   .navbar {
 	  a {
 		  color: white !important;
 		  text-shadow: none !important;
 		}
-  }
-
-  
-  .getFittrButton {
-    background-image: asset-url("home/getfittrbutton.png", image);
-    height: 74px;
-    width: 475px;
   }
 }
  
@@ -426,13 +419,6 @@ em {
 		  color: white !important;
 		  text-shadow: none !important;
 		}
-  }
-
-  
-  .getFittrButton {
-    background-image: asset-url("home/getfittrbutton.png", image);
-    height: 74px;
-    width: 475px;
   }
 }
  
@@ -450,8 +436,15 @@ em {
   }
   
   .getFittrButton {
-    background-image: asset-url("home/getfittrbutton.png", image);
-    height: 74px;
-    width: 475px;
+    background-image: asset-url("home/getfittrbuttontwo.png", image);
+    height: 52px;
+    width: 332px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &:hover {
+      background-position: 332px 0px;
+      cursor: pointer;
+    };
   }
 }

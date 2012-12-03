@@ -16,71 +16,82 @@
         
         
         <!-- row 1 -->
-        <div class="row-fluid">
+        <div class="jumbosign">
+          
           <div class="container-padded container-fluid">
-            <div class="span12 hero-unit">
-              <div class="span7">
-                <div class="appleDesc">
-                  <h1>Workout PLans</h1>
-                  <h2>Fit around you.</h2>
-                  
-                  <div class="align-justify">
-                    <p>When setting up an account, you put in your gender, age, equipment access, workout goals, and what time commitment you're willing to give. This in turn makes a very defined and set workout profile that will result in a great workout that is so tailored to you that you will find results that rival any personal trainer.</p>
-                    
-                    <%= link_to 'Learn more about Fittr workouts', :controller => 'about', :action => 'fittrsWorkouts' %>
+            <div class="row-fluid">
+              <div class="span12">
+                <div class="span7">
+                  <div class="appleDesc">
+                    <h1>Workout PLans</h1>
+                    <h2>Fit around you.</h2>
+
+                    <div class="align-justify">
+                      <p>When setting up an account, you put in your gender, age, equipment access, workout goals, and what time commitment you're willing to give. This in turn makes a very defined and set workout profile that will result in a great workout that is so tailored to you that you will find results that rival any personal trainer.</p>
+
+                      <%= link_to 'Learn more about Fittr workouts', :controller => 'about', :action => 'fittrsWorkouts' %>
+                    </div>
                   </div>
+                 </div>
+                 <div class="span5">
+                   <%= image_tag 'about/fitforyou.png' %>
+                 </div>
                 </div>
-               </div>
-               <div class="span5">
-                 <%= image_tag 'about/fitforyou.png' %>
-               </div>
               </div>
             </div>
           </div>
         
         <!-- row 2 -->
-        <div class="row-fluid">
+        <div class="jumbosign">
           <div class="container-fluid container-right">
-            <div class="span12 hero-unit">
-              <div class="span5">
-                <%= image_tag 'about/watching.png' %>
-              </div>
-              <div class="span7">
-                <div class="appleDesc">
-                  <h1>Fittr is watching</h1>
-                  <h2>Your data makes your workouts better.</h2>
-                  
-                  <div class="align-justify">
-                    <p>As you do your workout, Fittr tracks all of your improvements. After that, it compares your results to users who have similar goals as you and your workout plan is then changed to better match or surpass the other users results by using exercises that have shown to work for others.</p>
-                    <%= link_to 'Learn more about how this works', :controller => 'about', :action => 'fittrsTechnology' %>
-                    
-                  </div>
+            <div class="row-fluid">
+              <div class="span12">
+                <div class="span5">
+                  <%= image_tag 'about/watching.png' %>
                 </div>
-              </div>
-             </div>
-            </div>
-          
-          <!-- row 3 -->
-          <div class="row-fluid">
-            <div class="container-padded container-fluid">
-              <div class="span12 hero-unit">
                 <div class="span7">
                   <div class="appleDesc">
-                    <h1>Get your social fix</h1>
-                    <h2>Social features that will keep you motivated.</h2>
+                    <h1>Fittr is watching</h1>
+                    <h2>Your data makes your workouts better.</h2>
 
                     <div class="align-justify">
-                      <p>When setting up an account, you put in your gender, age, equipment access, workout goals, and what time commitment you're willing too give. This in turn makes a very defined and set workout profile that will result in a great workout that is so tailored to you that you will find results that rival any personal trainer.</p>
-                      <%= link_to 'Learn more about Fittr\'s social features', :controller => 'about', :action => 'socialize' %>
+                      <p>As you do your workout, Fittr tracks all of your improvements. After that, it compares your results to users who have similar goals as you and your workout plan is then changed to better match or surpass the other users results by using exercises that have shown to work for others.</p>
+                      <%= link_to 'Learn more about how this works', :controller => 'about', :action => 'fittrsTechnology' %>
+
                     </div>
                   </div>
-                 </div>
-                 <div class="span5">
-                   <%= image_tag 'about/accountability.png' %>
-                 </div>
+                </div>
+               </div>
+              </div>
+            </div>
+          
+        </div>
+        
+          <!-- row 3 -->
+          <div class="jumbosign">
+
+            <div class="container-padded container-fluid">
+              <div class="row-fluid">
+                <div class="span12">
+                  <div class="span7">
+                    <div class="appleDesc">
+                      <h1>Get your social fix</h1>
+                      <h2>Social features that will keep you motivated.</h2>
+
+                      <div class="align-justify">
+                        <p>When setting up an account, you put in your gender, age, equipment access, workout goals, and what time commitment you're willing too give. This in turn makes a very defined and set workout profile that will result in a great workout that is so tailored to you that you will find results that rival any personal trainer.</p>
+                        <%= link_to 'Learn more about Fittr\'s social features', :controller => 'about', :action => 'socialize' %>
+                      </div>
+                    </div>
+                   </div>
+                   <div class="span5">
+                      <%= image_tag 'about/accountability.png' %>
+                   </div>
+                  </div>
                 </div>
               </div>
             </div>
+          
           
           <%= render :partial => 'tryItButton' %>
         </div>
