@@ -1,88 +1,89 @@
-   
-      <!-- Start of alternating gray -->
-    <div class="offset4">
-      <div class="span10">
-        <!-- Boke head -->
-        <div class="row-fluid">
-          <div class="container-fluid container-bokeh-social container-center innerGlowed">
-            <div class="offset1 span10">
-              <div class="hidden-phone">
-                <h1 class="cubanoHead centerIt">The online</h1>
-                <h1 class="cubanoHead hugeTTT container-center">Jungle Gym</h1>
-              </div>
-            </div>
-          </div>
-        </div>
-    
+   <!-- Start of alternating gray -->
+     <!-- Boke head -->
+     <div class="row-fluid">
+       <div class="container-fluid container-bokeh-social container-center innerGlowed">
+           <div class="hidden-phone">
+             <h1 class="cubanoHead centerIt">The online</h1>
+             <h1 class="cubanoHead hugeTTT container-center">Jungle Gym</h1>
+           </div>
+       </div>
+     </div>
+
      <!-- row 1 -->
       <div class="jumbosign">
           <div class="row-fluid">
             <div class="span12">
               <div class="span7">
+ 						  <!-- On top for mobile -->
+ 							<div class="span5 align-center visible-phone">
+                  <%= image_tag 'home/trophy.png' %>
+               </div>
                 <div class="appleDesc">
                   <h1>Trophies</h1>
                   <h2>Earned bragging rights.</h2>
                   
                   <div class="align-justify">
                     <p>As you log workouts, you will receive trophies based on small milestones, these milestones vary from long term goals such as increasing your max lifts to simplistic as not skipping a workout for a week. You can track trophies that you are close to receiving and share your accomplishments with your friends.</p>
-                  
+
                   </div>
                 </div>
                </div>
-               <div class="span5 bumpDown">
-                 <%= image_tag 'home/trophy.png' %>
+               <div class="span5 align-center hidden-phone">
+                   <%= image_tag 'home/trophy.png' %>
                </div>
               </div>
             </div>
         </div>
 
-      <!-- row 2 -->
-      <div class="jumbosign">
-          <div class="row-fluid">
-            <div class="span12">
-              <div class="span5">
-                <%= image_tag 'about/accountability.png' %>
-              </div>
-              <div class="span7">
-                <div class="appleDesc">
-                  <h1>Peer pressure</h1>
-                  <h2>Now a good thing.</h2>
-                  
-                  <div class="align-justify">
-                    <p>If you are committed to working out on a given day and you decide to skip it Fittr will post on your Facebook wall that you were lazy and missed a workout (This is an optional feature that can be turned off). Even though some people may not want to advertise to the world that they missed a workout, it could be a great motivation to stick it out.</p>
+           <!-- row 2 -->
+           <div class="jumbosign">
+               <div class="row-fluid">
+                 <div class="span12">
+                   <div class="span5 align-center">
+                     <%= image_tag 'about/accountability.png' %>
+                   </div>
+                   <div class="span7">
+                     <div class="appleDesc">
+                       <h1>Peer pressure</h1>
+                       <h2>Now a good thing.</h2>
 
+                       <div class="align-justify">
+                         <p>If you are committed to working out on a given day and you decide to skip it Fittr will post on your Facebook wall that you were lazy and missed a workout (This is an optional feature that can be turned off). Even though some people may not want to advertise to the world that they missed a workout, it could be a great motivation to stick it out.</p>
+
+                       </div>
+                     </div>
+                   </div>
                   </div>
-                </div>
-              </div>
-             </div>
-          </div>
+                 </div>
 
-      </div>
+           </div>
 
-        <!-- row 3 -->
+       <!-- row 3 -->
         <div class="jumbosign">
-
             <div class="row-fluid">
               <div class="span12">
                 <div class="span7">
+   						  <!-- On top for mobile -->
+   							<div class="span5 align-center visible-phone">
+                   <%= image_tag 'home/socialize.png' %>
+                 </div>
                   <div class="appleDesc">
                     <h1>Get connected</h1>
                     <h2>Get results.</h2>
 
                     <div class="align-justify">
                       <p>Fittr has a great group feature that allows you to connect to your Facebook friends who are also Fittr members. You can see when your friends do a workout, share your workout program so the two of you can work out as partners, and share your small goals that you hope to achieve in the near future.</p>
+                    
 
                     </div>
                   </div>
                  </div>
-                 <div class="span5 bumpDown">
-                   <%= image_tag 'home/socialize.png' %>
+                 <div class="span5 align-center hidden-phone">
+                    <%= image_tag 'home/socialize.png' %>
                  </div>
                 </div>
               </div>
           </div>
-
-
         <%= render :partial => 'tryItButton' %>
       </div>
     </div>

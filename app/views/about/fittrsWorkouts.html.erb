@@ -1,86 +1,89 @@
 
-    <!-- Start of alternating gray -->
-    <div class="offset4">
-      <div class="span10">
-        <!-- Boke head -->
-        <div class="row-fluid">
-          <div class="container-fluid container-bokeh-workouts container-center innerGlowed">
-            <div class="offset1 span10">
-              <div class="hidden-phone">
-                <h1 class="cubanoHead centerIt">Plans that work for</h1>
-                <h1 class="cubanoHead hugeT container-center">Anyone</h1>
-              </div>
-            </div>
-          </div>
-        </div>
-    
-    
-    <!-- row 1 -->
-    <div class="jumbosign">
-        <div class="row-fluid">
-          <div class="span12">
-            <div class="span7">
-              <div class="appleDesc">
-                <h1>One in a million</h1>
-                <h2>It's never been this true.</h2>
-                
-                <div class="align-justify">
-                  <p>Rather than having a few hundred workout programs that work for certain goals, Fittr has a unique workout program for every individual user. With thousands of different exercises that all work for different goals, Fittr has several million unique workout program possibilities.</p>
-                
-                </div>
-              </div>
-             </div>
-             <div class="span5">
-               <%= image_tag 'home/unique.png' %>
-             </div>
-            </div>
+  <!-- Start of alternating gray -->
+    <!-- Boke head -->
+    <div class="row-fluid">
+      <div class="container-fluid container-bokeh-workouts container-center innerGlowed">
+          <div class="hidden-phone">
+            <h1 class="cubanoHead centerIt">Plans that work for</h1>
+            <h1 class="cubanoHead hugeT container-center">Anyone</h1>
           </div>
       </div>
-    
-    <!-- row 2 -->
-    <div class="jumbosign">
-        <div class="row-fluid">
-          <div class="span12">
-            <div class="span5">
-              <%= image_tag 'about/control.png' %>
-            </div>
-            <div class="span7">
-              <div class="appleDesc">
-                <h1>Want Control?</h1>
-                <h2>You got it.</h2>
-                
-                <div class="align-justify">
-                  <p>Fittr allows you to refine your workout plan day by day, after coming up with a base layout of what your workout is going to be, you can then control what goal you want to reach for the day. Do you want to work really hard for the day? Maybe you would like to get into another goal set? Or you could just stay down the current workout plan. </p>
-
-                </div>
-              </div>
-            </div>
-           </div>
-          </div>
-      
     </div>
     
-      <!-- row 3 -->
-      <div class="jumbosign">
-          <div class="row-fluid">
-            <div class="span12">
-              <div class="span7">
-                <div class="appleDesc">
-                  <h1>Unique Exercises</h1>
-                  <h2>Unique results.</h2>
+    <!-- row 1 -->
+     <div class="jumbosign">
+         <div class="row-fluid">
+           <div class="span12">
+             <div class="span7">
+						  <!-- On top for mobile -->
+							<div class="span5 align-center visible-phone">
+                 <%= image_tag 'home/unique.png' %>
+              </div>
+               <div class="appleDesc">
+                 <h1>One in a million</h1>
+                 <h2>It's never been this true.</h2>
 
-                  <div class="align-justify">
-                    <p>Many people are familiar with the traditional exercises and how most will benefit their bodies, but not many people understand how to incorporate a goal into how to do each exercise. This is exactly what makes Fittr unique. By going much deeper than telling you to “do bench press” for chest or “do squats” for legs, Fittr creates a well organized strategy that instructs users how many sets and reps to do for each exercise and how to do each rep so that users most effectively reach their goals.</p>
-                  </div>
-                </div>
-               </div>
-               <div class="span5">
-                  <%= image_tag 'about/variables.png' %>
+                 <div class="align-justify">
+                   <p>Rather than having a few hundred workout programs that work for certain goals, Fittr has a unique workout program for every individual user. With thousands of different exercises that all work for different goals, Fittr has several million unique workout program possibilities.</p>
+                   
+                 </div>
                </div>
               </div>
-            </div>
-        </div>
-      
+              <div class="span5 align-center hidden-phone">
+                 <%= image_tag 'home/unique.png' %>
+              </div>
+             </div>
+           </div>
+       </div>
+
+          <!-- row 2 -->
+          <div class="jumbosign">
+              <div class="row-fluid">
+                <div class="span12">
+                  <div class="span5 align-center">
+                    <%= image_tag 'about/control.png' %>
+                  </div>
+                  <div class="span7">
+                    <div class="appleDesc">
+                      <h1>Want Control?</h1>
+                      <h2>You got it.</h2>
+
+                      <div class="align-justify">
+                        <p>Fittr allows you to refine your workout plan day by day, after coming up with a base layout of what your workout is going to be, you can then control what goal you want to reach for the day. Do you want to work really hard for the day? Maybe you would like to get into another goal set? Or you could just stay down the current workout plan. </p>
+
+                      </div>
+                    </div>
+                  </div>
+                 </div>
+                </div>
+
+          </div>
+
+      <!-- row 3 -->
+       <div class="jumbosign">
+           <div class="row-fluid">
+             <div class="span12">
+               <div class="span7">
+  						  <!-- On top for mobile -->
+  							<div class="span5 align-center visible-phone">
+                    <%= image_tag 'about/variables.png' %>
+                </div>
+                 <div class="appleDesc">
+                   <h1>Unique Exercises</h1>
+                   <h2>Unique results.</h2>
+
+                   <div class="align-justify">
+                     <p>Many people are familiar with the traditional exercises and how most will benefit their bodies, but not many people understand how to incorporate a goal into how to do each exercise. This is exactly what makes Fittr unique. By going much deeper than telling you to “do bench press” for chest or “do squats” for legs, Fittr creates a well organized strategy that instructs users how many sets and reps to do for each exercise and how to do each rep so that users most effectively reach their goals.</p>
+
+                   </div>
+                 </div>
+                </div>
+                <div class="span5 align-center hidden-phone">
+                    <%= image_tag 'about/variables.png' %>
+                </div>
+               </div>
+             </div>
+         </div>
       
       <%= render :partial => 'tryItButton' %>
     </div>

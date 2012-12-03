@@ -1,53 +1,48 @@
-  
-      <!-- Start of alternating gray -->
-    <div class="offset4">
-      <div class="span10">
-        <!-- Boke head -->
-        <div class="row-fluid">
-          <div class="container-fluid container-bokeh-home-about container-center innerGlowed">
-            <div class="offset1 span10">
-              <div class="hidden-phone">
-                <h1 class="cubanoHead aboutBBTT">The trainer that's</h1>
-                <h1 class="cubanoHead hugeTT container-center">Personal</h1>
-              </div>
-            </div>
-          </div>
+<!-- Start of alternating gray -->
+  <!-- Boke head -->
+  <div class="row-fluid">
+    <div class="container-fluid container-bokeh-home-about container-center innerGlowed">
+        <div class="hidden-phone">
+          <h1 class="cubanoHead aboutBBTT">The trainer that's</h1>
+          <h1 class="cubanoHead hugeTT container-center">Personal</h1>
         </div>
-        
-    
-    
-    <!-- row 1 -->
-      <div class="jumbosign">
-          <div class="row-fluid">
-            <div class="span12">
-              <div class="span7">
-                <div class="appleDesc">
-                  <h1>The Personal trainer</h1>
-                  <h2>Is <em class="blueT">finally</em> personal.</h2>
-                  
-                  <div class="align-justify">
-                    <p>Trainers often offer a discounted rate to clients who bring friends to workout with and also reduce rates for group sessions with others your don't know. How then is it possible to give a tailored workout to every person? Fittr offers a unique workout for every user that is centered around you.</p>
-                    
-                    <%= link_to 'Learn more about Fittr workouts', :controller => 'about', :action => 'fittrsWorkouts' %>
-                  </div>
-                </div>
-               </div>
-               <div class="span5">
-                 <%= image_tag 'about/fitforyou.png' %>
-               </div>
-              </div>
-            </div>
-        </div>
+    </div>
+  </div>
 
-      <!-- row 2 -->
-      <div class="jumbosign">
-          <div class="row-fluid">
-            <div class="span12">
-              <div class="span5">
-                  </br>
-                  </br>
-                  </br>
-                  <%= image_tag 'about/accountability.png' %>
+  <!-- row 1 -->
+   <div class="jumbosign">
+       <div class="row-fluid">
+         <div class="span12">
+           <div class="span7">
+					  <!-- On top for mobile -->
+						<div class="span5 align-center visible-phone">
+               <%= image_tag 'about/fitforyou.png' %>
+            </div>
+             <div class="appleDesc">
+               <h1>The Personal trainer</h1>
+               <h2>Is <em class="blueT">finally</em> personal.</h2>
+               
+               <div class="align-justify">
+                 <p>Trainers often offer a discounted rate to clients who bring friends to workout with and also reduce rates for group sessions with others your don't know. How then is it possible to give a tailored workout to every person? Fittr offers a unique workout for every user that is centered around you.</p>
+                 
+                 <%= link_to 'Learn more about Fittr workouts', :controller => 'about', :action => 'fittrsWorkouts' %>
+
+               </div>
+             </div>
+            </div>
+            <div class="span5 align-center hidden-phone">
+               <%= image_tag 'about/fitforyou.png' %>
+            </div>
+           </div>
+         </div>
+     </div>
+
+        <!-- row 2 -->
+        <div class="jumbosign">
+            <div class="row-fluid">
+              <div class="span12">
+                <div class="span5 align-center">
+                <%= image_tag 'about/accountability.png' %>
                 </div>
                 <div class="span7">
                   <div class="appleDesc">
@@ -57,15 +52,13 @@
                     <div class="align-justify">
                       <p>One of the biggest reasons for getting trainer is the accountability that an individual coach brings to the table. Fittr replicates this by posting on your Facebook wall for the world to see when you skip a workout. Also, by allowing you to make groups with Facebook friends, it allows for a more personal way into being pushed to workout.</p>
                       <%= link_to 'Learn more about the social features', :controller => 'about', :action => 'socialize' %>
-
+                    </div>
                   </div>
                 </div>
+               </div>
               </div>
-             </div>
-          </div>
 
-      </div>
-
+        </div>
         <%= render :partial => 'tryItButton' %>
       </div>
     </div>
