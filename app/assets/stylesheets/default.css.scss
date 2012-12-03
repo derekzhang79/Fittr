@@ -400,16 +400,18 @@ em {
   .jumbosign {
     width: 90%;
   }  
-  .navbar {
-	  a {
-		  color: white !important;
-		  text-shadow: none !important;
-		}
-		
-		/* Opening bug */
-		.nav {
-			height: 100% !important;
-		}
+
+	.getFittrButton {
+    background-image: asset-url("home/getfittrbuttontwo.png", image);
+    height: 46px;
+    width: 299px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &:hover {
+      background-position: 299px 0px;
+      cursor: pointer;
+    };
   }
 }
  
@@ -418,17 +420,18 @@ em {
   .jumbosign {
     width: 90%;
   }
-  
-  .navbar {
-	  a {
-		  color: white !important;
-		  text-shadow: none !important;
-		}
-		
-		/* Opening bug */
-		.nav {
-			height: 100% !important;
-		}
+
+	.getFittrButton {
+    background-image: asset-url("home/getfittrbuttontwo.png", image);
+    height: 46px;
+    width: 299px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &:hover {
+      background-position: 299px 0px;
+      cursor: pointer;
+    };
   }
 }
  
@@ -436,18 +439,6 @@ em {
 @media (max-width: 480px) {
   .jumbosign {
     width: 86%;
-  }
-  
-  .navbar {
-	  a {
-		  color: white !important;
-		  text-shadow: none !important;
-		}
-		
-		/* Opening bug */
-		.nav {
-			height: 100% !important;
-		}
   }
   
   .getFittrButton {
