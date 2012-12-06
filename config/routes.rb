@@ -11,6 +11,9 @@ Fittr::Application.routes.draw do
   match '/About/PrivacyPolicy' => 'about#PrivacyPolicy'
   match '/About/ContactUs' => 'about#ContactUs'
   
+  #Mobile Services
+  match '/mobile/DoesFbExistForId' => 'mobile_services#doesFbExistForId'
+  
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
