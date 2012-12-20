@@ -14,6 +14,8 @@ Fittr::Application.routes.draw do
   #Mobile Services
   match '/mobile/DoesFbExistForId' => 'mobile_services#doesFbExistForId'
   
+  #User
+  match '/User/checkUser' => 'user#checkUser'  #Check if user exists
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

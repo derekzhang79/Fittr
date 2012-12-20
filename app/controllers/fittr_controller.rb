@@ -1,3 +1,0 @@
-
-class FittrController < ApplicationController
-end
